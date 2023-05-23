@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unusual Calculator</title>
+    <link rel="icon" type="image/ico" href="./images/guitar.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Unusual Calculator</h1>
+
+    <div class="calculator-container">
+      <div class="textfield-container">
+        <span>Arguments:</span>
+        <input
+          type="text"
+          id="argumentsInput"
+          placeholder="Enter numbers separated by spaces"
+        />
+      </div>
+
+      <div class="operations-container">
+        <span>Operation:</span>
+        <select id="operationSelect">
+          <option value="sum">∑ Sum</option>
+          <option value="product">∏ Product</option>
+          <option value="maximum">> Maximum</option>
+          <option value="minimum">< Minimum</option>
+        </select>
+      </div>
+
+      <div class="result-container">
+        <span>Result:</span>
+        <input type="text" id="resultInput" readonly />
+      </div>
+
+      <div class="button-container">
+        <button id="launchButton">Launch</button>
+        <button id="randomizeButton">Randomize</button>
+        <button id="saveButton">Save</button>
+      </div>
+    </div>
+
+    <div class="color-container">
+      <span>Foreground Color:</span>
+      <input type="color" id="foregroundColorInput" value="#ffffff" />
+      <span>Background Color:</span>
+      <input type="color" id="backgroundColorInput" value="#0000ff" />
+    </div>
+
+    <div class="horizontal-line"></div>
+
+    <div class="image-container">
+      <img src="./images/calc.png" width="100" height="100" />
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
